@@ -1,0 +1,285 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --- HEADER & NAVIGATION BAR --- */
+header {
+    background-color: #a72d2d;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: #7b2121;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 0;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.auth-btn {
+    border: 1px solid #fff;
+    padding: 5px 12px !important;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.auth-btn:hover {
+    background-color: #a72d2d;
+}
+
+.header-content {
+    padding: 1.5em 0;
+    color: #fff;
+}
+
+/* --- INDEX.HTML: Giới thiệu & Gallery --- */
+.intro {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.intro h2 {
+    color: #a72d2d;
+    font-size: 2em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    color: #a72d2d;
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    padding: 0 15px;
+}
+
+.card p {
+    font-size: 0.95em;
+    padding: 0 15px 20px;
+    margin-top: 0;
+}
+
+/* --- DETAILS.HTML: Danh sách Chủ đề & Kết quả API --- */
+.detail-list {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-list h2 {
+    color: #a72d2d;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.detail-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-list li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #ddd;
+    cursor: pointer; 
+}
+
+.detail-list li:hover {
+    background-color: #f7f7f7;
+}
+
+.detail-list li:last-child {
+    border-bottom: none;
+}
+
+.detail-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    display: block;
+    transition: color 0.3s;
+    pointer-events: none; 
+}
+
+.result-area {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.result-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-left: 5px solid #a72d2d;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.aqi-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* --- AUTH: Form Đăng nhập/Đăng ký --- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 60vh;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-form h2 {
+    text-align: center;
+    color: #a72d2d;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #a72d2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #7b2121;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-link a {
+    color: #a72d2d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+

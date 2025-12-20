@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Thảm Họa & Môi Trường</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="login.html" class="auth-btn">Đăng Nhập</a></li>
+                <li><a href="register.html" class="auth-btn">Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-form">
+            <h2>Đăng Ký Tài Khoản</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="reg-name">Tên đầy đủ:</label>
+                    <input type="text" id="reg-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Mật khẩu:</label>
+                    <input type="password" id="reg-password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Đăng Ký</button>
+                <p class="switch-link">Đã có tài khoản? <a href="login.html">Đăng Nhập</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tìm hiểu về Thảm Họa Thiên Nhiên</p>
+    </footer>
+</body>
+</html>
