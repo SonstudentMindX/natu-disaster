@@ -1,0 +1,143 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --- HEADER & NAVIGATION BAR --- */
+header {
+    background-color: #a72d2d;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: #7b2121;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 0;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.auth-btn {
+    border: 1px solid #fff;
+    padding: 5px 12px !important;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.auth-btn:hover {
+    background-color: #a72d2d;
+}
+
+.header-content {
+    padding: 1.5em 0;
+    color: #fff;
+}
+
+/*DISASTER CARDS */
+
+#disaster-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.disaster-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.disaster-card h3 {
+  margin: 0 0 10px;
+  color: #7b2121;
+  line-height: 1.3;
+}
+
+
+.disaster-card p {
+  margin: 0 0 12px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.disaster-card a {
+  margin-top: auto;
+  text-decoration: none;
+  color: #a72d2d;
+  font-weight: bold;
+}
+
+
+.disaster-card a:hover {
+  text-decoration: underline;
+}
+
+.empty-card {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border: 1px dashed #ccc;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
